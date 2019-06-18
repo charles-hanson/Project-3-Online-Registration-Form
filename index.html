@@ -21,32 +21,32 @@
           <legend>Contact Information</legend>
           <div class="flex-box">
             <label for="name">Full Name</label>
-            <input required type="text" id="name" name="user_name" placeholder="Required">
+            <input required type="text" id="name" name="user_name" placeholder="Required" required>
           </div><!--flex-box-->
 
           <div class="flex-box">
             <label for="email">Email Address</label>
-            <input required type="email" id="email" name="user_email" placeholder="Required">
+            <input required type="email" id="email" name="user_email" placeholder="Required" required>
           </div>
 
           <div class="flex-box">
             <label for="telephone">Phone Number</label>
-            <input type="tel" id="telephone" name="user_telephone" placeholder="(123) 456 - 7890">
+            <input required type="tel" id="telephone" name="user_telephone" placeholder="(123) 456 - 7890" required>
           </div>
 
           <div class="flex-box">
             <label for="street_address">Street Address</label>
-            <input type="text" id="street_address" name="user_street_address" placeholder="123 Treehouse Ln">
+            <input required type="text" id="street_address" name="user_street_address" placeholder="123 Treehouse Ln" required>
           </div>
 
           <div class="flex-box">
             <label for="city">City</label>
-            <input type="text" id="city" name="user_city" placeholder="Your City">
+            <input required type="text" id="city" name="user_city" placeholder="Your City" required>
           </div>
 
           <div class="flex-box">
             <label for="state">State</label>
-            <select id="state" name="user_state">
+            <select required id="state" name="user_state">
               <option value="choose_state">Choose State</option>
               <option value="alabama">AL</option>
               <option value="alaska">AK</option>
@@ -104,7 +104,7 @@
 
           <div class="flex-box">
             <label for="zip_code">Zip Code</label>
-            <input type="text" id="zip_code" name="user_zip_code" placeholder="Your Zip Code">
+            <input required type="text" id="zip_code" name="user_zip_code" placeholder="Your Zip Code" required>
           </div>
         </fieldset>
 
