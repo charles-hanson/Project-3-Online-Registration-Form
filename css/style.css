@@ -125,10 +125,7 @@ select[id=state] {
   display: block;
   width: 100%;
   margin-bottom: 15px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 12px 10px;
   background: #EEE;
   border-radius: 4px;
   border: none;
@@ -137,10 +134,7 @@ select[id=state] {
 #zip_code {
   width: 40%;
   float: none;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 12px 10px;
 }
 
 ::placeholder {
@@ -149,15 +143,12 @@ select[id=state] {
   padding-right: 5px;
 }
 
-input[name^="user"]:focus {
-  border: 2px solid #73C6BD;
-  transition: border-width 0.6s linear;
-}
-
+input[name^="user"]:focus,
 select[name^="user"]:focus {
   border: 2px solid #73C6BD;
   transition: border-width 0.6s linear;
 }
+
 
 .newsletter {
   margin-top: 0;
@@ -205,37 +196,37 @@ Media Querries
 =============== */
 
 @media (min-width: 1024px) {
-  .contact-info input[type="text"],
-  input[type="email"],
-  input[type="tel"] {
-    float: right;
-    width: 75%;
-    }
-    .contact-info label {
-      float: left;
-      width: 25%;
-      color: #283747;
-      padding: 7px 0px;
-    }
-    select[id=state] {
-      float: right;
-      width: 75%;
-    }
-    #zip_code {
-      width: 25%;
-      float: none;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-    .container {
-      width: 50%;
-      display: block;
-      margin-right: auto;
-      margin-left: auto;
-    }
-    button {
-      width: 100%;
-    }
+
+      .flex-box {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .contact-info label,
+      .contact-info input[type="text"] {
+        justify-content: space-between;
+      }
+
+
+      .contact-info label {
+        width: 40%;
+      }
+
+
+      .container {
+        width: 50%;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      #zip_code {
+        justify-content: flex-start;
+        margin-right: 42.5%;
+      }
+
+      button {
+        width: 100%;
+      }
 }
