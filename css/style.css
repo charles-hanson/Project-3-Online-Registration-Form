@@ -195,7 +195,7 @@ textarea[id="comment"] {
 Media Querries
 =============== */
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
 
       .flex-box {
         display: flex;
